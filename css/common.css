@@ -277,7 +277,23 @@ a {
 
 .footer-links {
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        gap: 1rem;
+        justify-content: center;
+    }
+    
+    .footer-link {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
 }
 
 .footer-link {
