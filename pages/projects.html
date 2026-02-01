@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Imash Eshan Wijesooriya</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">IEW</span>
+                <div class="logo-dot"></div>
+            </a>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <!-- <a href="experience.html" class="nav-link">Experience</a> -->
+                <a href="skills.html" class="nav-link">Skills</a>
+                <!-- <a href="blog.html" class="nav-link">Blog</a> -->
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="projects-header">
+        <div class="section-container">
+            <div class="header-content animate-on-scroll">
+                <h1 class="page-title">Projects</h1>
+                <p class="page-subtitle">
+                    A curated selection of enterprise systems, platform integrations, and personal products I've built — focused on scalability, performance, and real-world business impact.
+                </p>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Production Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Business Focused</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Filters -->
+    <section class="filters-section">
+        <div class="section-container">
+            <h2 class="section-title animate-on-scroll">Explore by Category</h2>
+            <div class="filters-container animate-on-scroll">
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="enterprise">Enterprise Systems</button>
+                    <button class="filter-btn" data-filter="integration">Integrations</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud</button>
+                    <button class="filter-btn" data-filter="personal">Personal Projects</button>
+                </div>
+                <!-- <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search projects..." class="search-input">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Enterprise Projects -->
+    <section class="enterprise-projects">
+        <div class="section-container">
+            <!-- <h2 class="section-title animate-on-scroll">Enterprise & Production Systems</h2>
+            <p class="section-description animate-on-scroll">
+                Large-scale platforms and integrations built in real-world production environments, supporting live business operations and real merchant workflows.
+            </p> -->
+            
+            <!-- Project 1 -->
+            <div class="project-detail animate-on-scroll" data-categories="enterprise,backend,cloud,integration">
+                <div class="project-badge">
+                    <span class="badge-text">Featured</span>
+                    <div class="badge-glow"></div>
+                </div>
+                <div class="project-header">
+                    <h3 class="project-title">Kapruka Partner Central — Enterprise Middleware Platform</h3>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <span>Case Study</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#" class="project-link">
+                            <span>Live Platform</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="project-short-description">
+                    A large-scale middleware system connecting merchants, vendors, and service providers to Kapruka Marketplace through secure APIs and real-time service orchestration.
+                </p>
+                
+                <div class="project-details-grid">
+                    <div class="detail-card glass-effect">
+                        <h4 class="detail-title">
+                            <i class="fas fa-exclamation-circle"></i>
+                            Problem
+                        </h4>
+                        <p class="detail-content">
+                            Kapruka required a centralized platform to onboard merchants, process payments, manage orders, and handle service workflows across multiple business verticals — all securely and at scale.
+                        </p>
+                    </div>
+                    
+                    <div class="detail-card glass-effect">
+                        <h4 class="detail-title">
+                            <i class="fas fa-lightbulb"></i>
+                            Solution
+                        </h4>
+                        <p class="detail-content">
+                            Designed and implemented a modular middleware platform with secure API gateways, real-time ticketing, encrypted communication, and scalable service pipelines deployed on AWS.
+                        </p>
+                    </div>
+                    
+                    <div class="detail-card glass-effect">
+                        <h4 class="detail-title">
+                            <i class="fas fa-chart-line"></i>
+                            Impact
+                        </h4>
+                        <div class="impact-list">
+                            <div class="impact-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Enabled seamless onboarding of merchants and service providers</span>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Improved operational efficiency across order and service workflows</span>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Strengthened system reliability through encryption, rate limiting, and monitoring</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-features">
+                    <h4 class="features-title">Key Features</h4>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure API gateway with encryption and rate limiting</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Real-time chat and service ticketing system</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Dynamic form generation and workflow orchestration</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>AWS-based deployment and CI/CD pipelines</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-tech">
+                    <div class="tech-stack">
+                        <h4 class="tech-title">Tech Stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Hibernate</span>
+                            <span class="tech-tag">WebSockets</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Jenkins</span>
+                        </div>
+                    </div>
+                    <div class="project-type">
+                        <span class="type-badge enterprise">Enterprise System</span>
+                        <span class="type-badge backend">Backend</span>
+                        <span class="type-badge cloud">Cloud</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-detail animate-on-scroll" data-categories="integration,ecommerce,frontend">
+                <div class="project-badge">
+                    <span class="badge-text">Featured</span>
+                    <div class="badge-glow"></div>
+                </div>
+                <div class="project-header">
+                    <h3 class="project-title">Kapruka Partner Bridge — Shopify Integration App</h3>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <span>Case Study</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#" class="project-link">
+                            <span>Shopify App</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="project-short-description">
+                    An official Shopify App enabling automated product, inventory, order, and checkout synchronization between Shopify stores and Kapruka's backend systems.
+                </p>
+                
+                <div class="project-details-grid">
+                    <div class="detail-card glass-effect">
+                        <h4 class="detail-title">
+                            <i class="fas fa-exclamation-circle"></i>
+                            Problem
+                        </h4>
+                        <p class="detail-content">
+                            Merchants using Shopify needed a seamless way to integrate their stores with Kapruka's internal systems without manual product uploads or order processing.
+                        </p>
+                    </div>
+                    
+                    <div class="detail-card glass-effect">
+                        <h4 class="detail-title">
+                            <i class="fas fa-lightbulb"></i>
+                            Solution
+                        </h4>
+                        <p class="detail-content">
+                            Built a Shopify-compliant app using Shopify Remix and Polaris that handles real-time synchronization, automated checkout workflows, and merchant onboarding pipelines.
+                        </p>
+                    </div>
+                    
+                    <div class="detail-card glass-effect">
+                        <h4 class="detail-title">
+                            <i class="fas fa-chart-line"></i>
+                            Impact
+                        </h4>
+                        <div class="impact-list">
+                            <div class="impact-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Reduced manual merchant onboarding effort</span>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Enabled real-time inventory and order synchronization</span>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Improved merchant satisfaction and integration reliability</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-features">
+                    <h4 class="features-title">Key Features</h4>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Shopify-compliant checkout automation</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Real-time product, order, and inventory sync</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Merchant onboarding and configuration workflows</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-plug"></i>
+                            <span>Production-ready API integrations</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-tech">
+                    <div class="tech-stack">
+                        <h4 class="tech-title">Tech Stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Shopify Remix</span>
+                            <span class="tech-tag">Polaris</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Heroku</span>
+                        </div>
+                    </div>
+                    <div class="project-type">
+                        <span class="type-badge integration">Integration</span>
+                        <span class="type-badge ecommerce">E-Commerce</span>
+                        <span class="type-badge frontend">Frontend</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-detail animate-on-scroll" data-categories="integration,ecommerce,backend">
+                <div class="project-badge">
+                    <span class="badge-text">Featured</span>
+                    <div class="badge-glow"></div>
+                </div>
+                <div class="project-header">
+                    <h3 class="project-title">Kapruka Partner Central — WooCommerce Plugin</h3>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <span>Case Study</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#" class="project-link">
+                            <span>Plugin Demo</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="project-short-description">
+                    A custom WooCommerce plugin integrating WordPress stores with Kapruka Partner Central for automated product and order synchronization.
+                </p>
+                
+                <div class="project-details-grid">
+                    <div class="detail-card glass-effect">
+                        <h4 class="detail-title">
+                            <i class="fas fa-exclamation-circle"></i>
+                            Problem
+                        </h4>
+                        <p class="detail-content">
+                            WooCommerce merchants needed a way to integrate with Kapruka's backend systems without building custom integrations from scratch.
+                        </p>
+                    </div>
+                    
+                    <div class="detail-card glass-effect">
+                        <h4 class="detail-title">
+                            <i class="fas fa-lightbulb"></i>
+                            Solution
+                        </h4>
+                        <p class="detail-content">
+                            Developed a robust WordPress plugin with frontend configuration interfaces and backend service communication via secure REST APIs.
+                        </p>
+                    </div>
+                    
+                    <div class="detail-card glass-effect">
+                        <h4 class="detail-title">
+                            <i class="fas fa-chart-line"></i>
+                            Impact
+                        </h4>
+                        <div class="impact-list">
+                            <div class="impact-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Enabled WooCommerce merchants to onboard seamlessly</span>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Reduced manual product and order processing</span>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Improved integration reliability and maintainability</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-features">
+                    <h4 class="features-title">Key Features</h4>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-plug"></i>
+                            <span>Custom REST API integration layer</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-code"></i>
+                            <span>Frontend and backend plugin architecture</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Merchant onboarding workflows</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure authentication and data synchronization</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-tech">
+                    <div class="tech-stack">
+                        <h4 class="tech-title">Tech Stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">jQuery</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="project-type">
+                        <span class="type-badge integration">Integration</span>
+                        <span class="type-badge ecommerce">E-Commerce</span>
+                        <span class="type-badge backend">Backend</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-detail animate-on-scroll" data-categories="enterprise,backend,ecommerce">
+                <div class="project-badge">
+                    <span class="badge-text">Enterprise</span>
+                    <div class="badge-glow"></div>
+                </div>
+                <div class="project-header">
+                    <h3 class="project-title">Grasshoppers Delivery Service Platform</h3>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <span>Case Study</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#" class="project-link">
+                            <span>Live Platform</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="project-short-description">
+                    Enhancements to Kapruka's delivery subsidiary platform enabling secure payments, authentication, and real-time order tracking across multiple portals.
+                </p>
+                
+                <div class="project-details-grid">
+                    <div class="detail-card glass-effect">
+                        <h4 class="detail-title">
+                            <i class="fas fa-exclamation-circle"></i>
+                            Problem
+                        </h4>
+                        <p class="detail-content">
+                            Grasshoppers required modernization of its delivery systems to support secure transactions, real-time tracking, and improved user authentication across customer and internal portals.
+                        </p>
+                    </div>
+                    
+                    <div class="detail-card glass-effect">
+                        <h4 class="detail-title">
+                            <i class="fas fa-lightbulb"></i>
+                            Solution
+                        </h4>
+                        <p class="detail-content">
+                            Implemented secure payment flows, authentication systems, and live order tracking features across web portals while strengthening backend reliability.
+                        </p>
+                    </div>
+                    
+                    <div class="detail-card glass-effect">
+                        <h4 class="detail-title">
+                            <i class="fas fa-chart-line"></i>
+                            Impact
+                        </h4>
+                        <div class="impact-list">
+                            <div class="impact-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Improved customer experience through real-time delivery tracking</span>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Enhanced system security and payment reliability</span>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Increased operational visibility across delivery workflows</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-features">
+                    <h4 class="features-title">Key Features</h4>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Secure payment gateway integration</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-user-shield"></i>
+                            <span>Authentication and role-based access control</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Real-time delivery tracking dashboards</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-server"></i>
+                            <span>Backend service enhancements</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-tech">
+                    <div class="tech-stack">
+                        <h4 class="tech-title">Tech Stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java EE</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">jQuery</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Smart SVN</span>
+                        </div>
+                    </div>
+                    <div class="project-type">
+                        <span class="type-badge enterprise">Enterprise System</span>
+                        <span class="type-badge ecommerce">E-Commerce</span>
+                        <span class="type-badge backend">Backend</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Projects -->
+    <section class="personal-projects">
+        <div class="section-container">
+            <!-- <h2 class="section-title animate-on-scroll">Personal & Independent Projects</h2>
+            <p class="section-description animate-on-scroll">
+                Independent projects built outside of enterprise environments, focused on product experimentation, branding, and end-to-end ownership.
+            </p> -->
+            
+            <div class="personal-grid">
+                <!-- Project 5 -->
+                <div class="personal-card animate-on-scroll" data-categories="personal,frontend">
+                    <div class="personal-badge">Personal</div>
+                    <div class="personal-content glass-effect">
+                        <h3 class="personal-title">Stellix — Brand Identity & Design Portfolio</h3>
+                        <p class="personal-description">
+                            A WordPress-based portfolio website showcasing branding and design services with a focus on visual storytelling and client presentation.
+                        </p>
+                        
+                        <div class="personal-problem-solution">
+                            <div class="ps-item">
+                                <h4><i class="fas fa-exclamation-circle"></i> Problem</h4>
+                                <p>A personal brand identity project required a professional platform to showcase creative work and attract design clients.</p>
+                            </div>
+                            <div class="ps-item">
+                                <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                                <p>Built a responsive WordPress site using Elementor with custom layouts optimized for branding presentation and performance.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="personal-impact">
+                            <h4>Impact</h4>
+                            <ul>
+                                <li>Created a professional online presence for branding services</li>
+                                <li>Improved client engagement and portfolio discoverability</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="personal-features">
+                            <h4>Key Features</h4>
+                            <div class="features-tags">
+                                <span>Custom WordPress theme layouts</span>
+                                <span>Responsive design and optimized performance</span>
+                                <span>SEO-friendly structure</span>
+                            </div>
+                        </div>
+                        
+                        <div class="personal-tech">
+                            <div class="tech-tags">
+                                <span class="tech-tag">WordPress</span>
+                                <span class="tech-tag">Elementor</span>
+                                <span class="tech-tag">InfinityFree</span>
+                            </div>
+                        </div>
+                        
+                        <div class="personal-links">
+                            <a href="#" class="personal-link">
+                                <span>Live Site</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="personal-link">
+                                <span>GitHub</span>
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="personal-card animate-on-scroll" data-categories="personal,frontend,cloud">
+                    <div class="personal-badge">Personal</div>
+                    <div class="personal-content glass-effect">
+                        <h3 class="personal-title">Qytona — Web Development Business Website</h3>
+                        <p class="personal-description">
+                            A responsive business website with automated CI/CD pipelines and deployment workflows.
+                        </p>
+                        
+                        <div class="personal-problem-solution">
+                            <div class="ps-item">
+                                <h4><i class="fas fa-exclamation-circle"></i> Problem</h4>
+                                <p>A web development business required a fast, reliable marketing website with modern deployment practices and performance optimization.</p>
+                            </div>
+                            <div class="ps-item">
+                                <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                                <p>Built a responsive frontend site and implemented GitHub Actions-based CI/CD pipelines for automated deployment.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="personal-impact">
+                            <h4>Impact</h4>
+                            <ul>
+                                <li>Reduced deployment friction through automation</li>
+                                <li>Improved site performance and maintainability</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="personal-features">
+                            <h4>Key Features</h4>
+                            <div class="features-tags">
+                                <span>Responsive UI design</span>
+                                <span>Automated CI/CD pipelines</span>
+                                <span>GitHub-based deployment workflows</span>
+                            </div>
+                        </div>
+                        
+                        <div class="personal-tech">
+                            <div class="tech-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">Particle.js</span>
+                                <span class="tech-tag">GitHub Actions</span>
+                            </div>
+                        </div>
+                        
+                        <div class="personal-links">
+                            <a href="#" class="personal-link">
+                                <span>Live Site</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="personal-link">
+                                <span>GitHub</span>
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="projects-cta">
+        <div class="section-container">
+            <div class="cta-content glass-effect animate-on-scroll">
+                <h2 class="cta-title">Want to See How I Build Systems?</h2>
+                <p class="cta-description">
+                    Each project reflects my focus on scalable architecture, clean engineering, and real-world impact. If you'd like to explore how I approach complex problems or collaborate on new challenges, let's connect.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary">
+                        <span>Contact Me</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                    <a href="experience.html" class="btn-secondary">
+                        <span>View Experience</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3 class="footer-name">Imash Eshan Wijesooriya</h3>
+                <p class="footer-role">Software Engineer · Full-Stack Developer</p>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:imash@example.com" class="footer-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://linkedin.com/in/imash" class="footer-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/imash" class="footer-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div class="footer-copyright">
+                © 2026 · Built with HTML, CSS & JavaScript
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/projects.js"></script>
+</body>
+</html>

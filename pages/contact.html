@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Imash Eshan Wijesooriya</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">IEW</span>
+                <div class="logo-dot"></div>
+            </a>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <!-- <a href="experience.html" class="nav-link">Experience</a> -->
+                <a href="skills.html" class="nav-link">Skills</a>
+                <!-- <a href="blog.html" class="nav-link">Blog</a> -->
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="contact-header">
+        <div class="section-container">
+            <div class="header-content animate-on-scroll">
+                <h1 class="page-title">Contact</h1>
+                <p class="page-subtitle">
+                    Let's connect — whether it's about opportunities, collaborations, or building impactful systems together.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Grid -->
+    <section class="contact-content">
+        <div class="section-container">
+            <div class="contact-grid">
+                <!-- Contact Form Column -->
+                <div class="form-column">
+                    <!-- Contact Form -->
+                    <div class="form-section">
+                        <h2 class="section-title animate-on-scroll">Send a Message</h2>
+                        <form id="contactForm" class="contact-form animate-on-scroll">
+                            <div class="form-group">
+                                <label for="fullName" class="form-label">
+                                    Full Name <span class="required">*</span>
+                                </label>
+                                <div class="input-group">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="fullName" name="fullName" required 
+                                           placeholder="Enter your full name" class="form-input">
+                                    <div class="input-focus-line"></div>
+                                </div>
+                                <div class="error-message" id="nameError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">
+                                    Email Address <span class="required">*</span>
+                                </label>
+                                <div class="input-group">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="email" name="email" required 
+                                           placeholder="Enter your email address" class="form-input">
+                                    <div class="input-focus-line"></div>
+                                </div>
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">
+                                    Subject <span class="optional">(optional)</span>
+                                </label>
+                                <div class="input-group">
+                                    <i class="fas fa-tag"></i>
+                                    <input type="text" id="subject" name="subject" 
+                                           placeholder="What is this regarding?" class="form-input">
+                                    <div class="input-focus-line"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">
+                                    Message <span class="required">*</span>
+                                </label>
+                                <div class="input-group">
+                                    <i class="fas fa-comment-alt"></i>
+                                    <textarea id="message" name="message" required rows="5" 
+                                              placeholder="Tell me about your project, opportunity, or question..." 
+                                              class="form-input textarea"></textarea>
+                                    <div class="input-focus-line"></div>
+                                </div>
+                                <div class="error-message" id="messageError"></div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn-primary submit-btn">
+                                    <span class="btn-text">Send Message</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                                <div class="form-info">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span>I typically respond within 24 hours</span>
+                                </div>
+                            </div>
+
+                            <!-- Success & Error Messages -->
+                            <div class="form-message success-message" id="successMessage">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="message-content">
+                                    <h4>Thanks for reaching out!</h4>
+                                    <p>I'll get back to you as soon as possible.</p>
+                                </div>
+                            </div>
+
+                            <div class="form-message error-message" id="errorMessage">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <div class="message-content">
+                                    <h4>Something went wrong</h4>
+                                    <p>Please try again or contact me directly via email.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="info-column">
+                    <!-- Direct Contact Methods -->
+                    <div class="contact-methods-section">
+                        <h2 class="section-title animate-on-scroll">Get in Touch Directly</h2>
+                        <div class="contact-methods">
+                            <div class="contact-method animate-on-scroll">
+                                <div class="method-icon email">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3 class="method-title">Email</h3>
+                                    <a href="mailto:imash@example.com" class="method-link">
+                                        imash@example.com
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <p class="method-description">For detailed inquiries and project discussions</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method animate-on-scroll">
+                                <div class="method-icon linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3 class="method-title">LinkedIn</h3>
+                                    <a href="https://linkedin.com/in/imash" target="_blank" class="method-link">
+                                        linkedin.com/in/imash
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <p class="method-description">Connect professionally and view my experience</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method animate-on-scroll">
+                                <div class="method-icon github">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3 class="method-title">GitHub</h3>
+                                    <a href="https://github.com/imash" target="_blank" class="method-link">
+                                        github.com/imash
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <p class="method-description">Explore my code and projects</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="methods-description animate-on-scroll">
+                            Feel free to reach out through any channel — I typically respond within 24 hours.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="availability-section-full">
+        <div class="section-container">
+            <h2 class="section-title animate-on-scroll">What I'm Open To</h2>
+            <div class="availability-grid-full">
+                <div class="availability-item animate-on-scroll">
+                    <div class="availability-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="availability-title">Full-time Roles</h3>
+                    <p class="availability-description">Remote software engineering positions</p>
+                </div>
+                <div class="availability-item animate-on-scroll">
+                    <div class="availability-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="availability-title">Technical Focus</h3>
+                    <p class="availability-description">Backend, full-stack, and platform engineering</p>
+                </div>
+                <div class="availability-item animate-on-scroll">
+                    <div class="availability-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="availability-title">Team Environments</h3>
+                    <p class="availability-description">Startup, enterprise, and product teams</p>
+                </div>
+                <div class="availability-item animate-on-scroll">
+                    <div class="availability-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 class="availability-title">Project Work</h3>
+                    <p class="availability-description">Freelance and contract-based projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="contact-cta">
+        <div class="section-container">
+            <div class="cta-content glass-effect animate-on-scroll">
+                <h2 class="cta-title">Let's Build Something Meaningful</h2>
+                <p class="cta-description">
+                    If you're looking for a software engineer who builds scalable systems and values clean, business-driven solutions — I'd love to hear from you.
+                </p>
+                <div class="cta-buttons">
+                    <button type="button" class="btn-primary" onclick="document.getElementById('contactForm').scrollIntoView({behavior: 'smooth'})">
+                        <span>Send a Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <a href="projects.html" class="btn-secondary">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3 class="footer-name">Imash Eshan Wijesooriya</h3>
+                <p class="footer-role">Software Engineer · Full-Stack Developer</p>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:imash@example.com" class="footer-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://linkedin.com/in/imash" class="footer-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/imash" class="footer-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div class="footer-copyright">
+                © 2026 · Built with HTML, CSS & JavaScript
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>
