@@ -288,3 +288,31 @@ window.addEventListener('load', function() {
         }
     });
 });
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async function(e) {
+    e.preventDefault(); // prevent default page reload
+
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+            document.getElementById("successMessage").style.display = "block";
+            document.getElementById("errorMessage").style.display = "none";
+            form.reset();
+        } else {
+            throw new Error("Form submission failed.");
+        }
+    } catch (error) {
+        document.getElementById("successMessage").style.display = "none";
+        document.getElementById("errorMessage").style.display = "block";
+        console.error(error);
+    }
+});
